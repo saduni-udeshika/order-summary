@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.text-container{
+    padding: 8%;
+    text-align: center;
+}
+
+.sub-tittle{
+    font-size: 32px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 20px;
+}
+
+.text{
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 25px;
+    padding: 0 4%;
+}
+
+.annual-plan-box{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.annual-plan-box-left{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.plan{
+    margin-left: 20px;
+}
+
+.plan-heading{
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.price{
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+}
+
+.annual-plan-box a{
+    font-weight: 900;
+    transition: color .3s ease;
+}
+
+.annual-plan-box a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+
+a.proceed-button{
+    display: block;
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 30px 0;
+    transition: background-color .3s ease;
+}
+
+a.proceed-button:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+a.cancel-button{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    transition: color .3s ease;
+}
+
+a.cancel-button:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+
+    .container{
+        max-width: 85%;
+    }
+
+    .text{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .sub-tittle{
+        font-size: 22px;
+    }
+
+    .annual-plan-box{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .plan-heading{
+        font-size: 14px;
+    }
+
+    .price{
+        font-size: 12px;
+    }
+
+    a.proceed-button{
+        padding: 10px 0;
+        margin: 12px 0;
+    }
+}
