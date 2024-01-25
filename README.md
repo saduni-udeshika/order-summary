@@ -25,7 +25,7 @@ The goal of this challenge was to create an order summary card with hover states
 
 ## Preview
 
-![Order Summary Card Preview](./screenshot.jpg)
+![image](https://github.com/saduni-udeshika/order-summary/assets/60056888/5a834586-7335-4508-b6cb-c3341f5db691)
 
 ## Links
 
